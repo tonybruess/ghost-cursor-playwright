@@ -107,7 +107,7 @@ export function path(point: Vector, target: Vector, spreadOverride?: number);
 export function path(point: Vector, target: BoundingBox, spreadOverride?: number);
 export function path(start: Vector, end: BoundingBox | Vector, spreadOverride?: number): Vector[] {
 	const width = 100;
-	const minSteps = 25;
+	const minSteps = 5; // Village Eng: Shorten from 25 to 5
 	const curve = bezierCurve(start, end, spreadOverride);
 	const length = curve.length() * 0.8;
 	const baseTime = Math.random() * minSteps;
