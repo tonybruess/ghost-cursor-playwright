@@ -5,4 +5,3 @@ test.ts
 .gitignore
 package-lock.json
 yarn.lock
-lib/**
